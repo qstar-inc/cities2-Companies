@@ -1,0 +1,99 @@
+{
+    "$id": 0,
+    "$type": "0|Game.Prefabs.RenderPrefab, Game",
+    "name": "ParadoxInteractive BillboardRoundMedium Decal_RenderPrefab",
+    "active": true,
+    "components": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[Game.Prefabs.ComponentBase, Game]], mscorlib",
+        "$rlength": 3,
+        "$rcontent": [
+            {
+                "$id": 2,
+                "$type": "2|Game.Prefabs.DecalProperties, Game",
+                "name": "DecalProperties",
+                "active": true,
+                "m_TextureArea": {
+                    "$type": "3|Colossal.Mathematics.Bounds2, Colossal.Mathematics",
+                    "min": {
+                        "$type": "4|Unity.Mathematics.float2, Unity.Mathematics",
+                        "x": 0,
+                        "y": 0
+                    },
+                    "max": {
+                        "$type": 4,
+                        "x": 1,
+                        "y": 1
+                    }
+                },
+                "m_RendererPriority": 0,
+                "m_LayerMask": 36,
+                "m_EnableInfoviewColor": false
+            },
+            {
+                "$id": 15,
+                "$type": "15|Game.Prefabs.UIObject, Game",
+                "name": "UIObject",
+                "active": true,
+                "m_Group": null,
+                "m_Priority": 1,
+                "m_Icon": "coui://starq-companies-pack/ParadoxInteractive.png",
+                "m_LargeIcon": "",
+                "m_IsDebugObject": false
+            },
+            {
+                "$id": 50,
+                "$type": "50|Game.Prefabs.EditorAssetCategoryOverride, Game",
+                "name": "EditorAssetCategoryOverride",
+                "active": true,
+                "m_IncludeCategories": {
+                    "$id": 51,
+                    "$type": "51|System.String[], mscorlib",
+                    "$rlength": 3,
+                    "$rcontent": [
+                        "StarQ",
+                        "StarQ/Brand Decal",
+                        "StarQ/Brand Decal/ParadoxInteractive"
+                    ]
+                },
+                "m_ExcludeCategories": {
+                    "$id": 52,
+                    "$type": 51,
+                    "$rlength": 0,
+                    "$rcontent": [
+                    ]
+                }
+            }
+        ]
+    },
+    "m_GeometryAsset": $fstrref:"CID:b62bd4835bfb4f079e244cb0b3341f64",
+    "m_SurfaceAssets": {
+        "$id": 3,
+        "$type": "5|Colossal.IO.AssetDatabase.AssetReference`1[[Colossal.IO.AssetDatabase.SurfaceAsset, Colossal.IO.AssetDatabase, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]][], Colossal.IO.AssetDatabase",
+        "$rlength": 1,
+        "$rcontent": [
+            $fstrref:"CID:fcb738a6e7e340d397b8a70c7a60c654"
+        ]
+    },
+    "m_Bounds": {
+        "$type": "6|Colossal.Mathematics.Bounds3, Colossal.Mathematics",
+        "min": {
+            "$type": "7|Unity.Mathematics.float3, Unity.Mathematics",
+            "x": -0.73,
+            "y": -0.5,
+            "z": -0.73
+        },
+        "max": {
+            "$type": 7,
+            "x": 0.73,
+            "y": 0.5,
+            "z": 0.73
+        }
+    },
+    "m_SurfaceArea": 0,
+    "m_IndexCount": 1,
+    "m_VertexCount": 24,
+    "m_MeshCount": 1,
+    "m_IsImpostor": false,
+    "m_ManualVTRequired": false
+}
