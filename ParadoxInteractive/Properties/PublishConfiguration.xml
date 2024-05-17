@@ -31,10 +31,10 @@ Take a screenshot and post it in CS:Modding Discord Server or CS Official Server
 	<Thumbnail Value="Properties/Thumbnail.png" />
 	<!--Screenshot, can be set multiple times-->
 	<Screenshot Value="Properties/Screenshots/001_Paradox_Office.jpg" />
-	<Screenshot Value="Properties/Screenshots/002_Paradox_CRI.png" />
-	<Screenshot Value="Properties/Screenshots/003_CS2_Banhammer.png" />
-	<Screenshot Value="Properties/Screenshots/004_Paradox_CRI_CS2.png" />
-	<Screenshot Value="Properties/Screenshots/005_Billboards.png" />
+	<Screenshot Value="Properties/Screenshots/002_Paradox_CRI.jpg" />
+	<Screenshot Value="Properties/Screenshots/003_CS2_Banhammer.jpg" />
+	<Screenshot Value="Properties/Screenshots/004_Paradox_CRI_CS2.jpg" />
+	<Screenshot Value="Properties/Screenshots/005_Billboards.jpg" />
 	<!--Tag, can be set multiple times-->
 	<Tag Value="Code Mod" />
 	<!--Link to the forum post where the mod can be discussed-->
