@@ -1,14 +1,17 @@
 ﻿using Colossal.IO.AssetDatabase;
-//using Colossal.Logging;
+using Colossal.Logging;
 using Colossal.PSI.Environment;
 using Colossal.UI;
 using Game.Modding;
 using Game.Prefabs;
+using Game.PSI;
 using Game.SceneFlow;
 using Game;
 using StreamReader = System.IO.StreamReader;
 using System.Collections.Generic;
 using System.IO;
+using System;
+using UnityEngine;
 
 internal readonly struct StarQ_Company_Paradox : IAssetDatabaseDescriptor
 {
@@ -36,13 +39,56 @@ namespace CompanyModParadoxInteractive
                 UIManager.defaultUISystem.AddHostLocation(uiHostName, Path.Combine(Path.GetDirectoryName(asset.path), "Thumbs"), false);
 
             prefabSystem = updateSystem.World.GetOrCreateSystemManaged<PrefabSystem>();
-            JustDoIt(asset.path);
+            var modDir = Path.GetDirectoryName(asset.path);
+            StartProcess(modDir);
         }
 
-        private void JustDoIt(string assetpath) {
+        private void StartProcess(string modDir)
+        {
+            int cidRestored = CheckCID(modDir);
+            if (cidRestored == 0)
+            {
+                JustDoIt(modDir);
+            }
+        }
+
+        private int CheckCID(string modDir, int cidRestored = 0)
+        {
+            string[] cidBackups = Directory.GetFiles(modDir);
+            foreach (string cidBackup in cidBackups)
+            {
+                if (cidBackup.EndsWith(".cid.bak"))
+                {
+                    string cidFile = cidBackup.Substring(0, cidBackup.Length - 4);
+
+                    if (!File.Exists(cidFile))
+                    {
+                        File.Copy(cidBackup, cidFile);
+                        cidRestored++;
+                    }
+                }
+            }
+
+            string[] subdirs = Directory.GetDirectories(modDir);
+            foreach (string subdir in subdirs)
+            {
+                cidRestored = CheckCID(subdir, cidRestored);
+            }
+
+            if (cidRestored > 0)
+            {
+                NotificationSystem.Push($"{nameof(CompanyModParadoxInteractive)}-RestoreCID",
+                        title: "Restart Required",
+                        text: $"{cidRestored} CID file(s) restored after changing playset...",
+                        onClicked: () => Application.Quit(0)
+                );
+            }
+
+            return cidRestored;
+        }
+        private void JustDoIt(string modDir) {
             AssetDatabase<StarQ_Company_Paradox> starq_company_paradox = new();
             
-            var modDir = Path.GetDirectoryName(assetpath);
             var assetDir = new DirectoryInfo(Path.Combine(modDir, "Assets-StarQ"));
 
             List<FileInfo> files = [];
@@ -56,12 +102,23 @@ namespace CompanyModParadoxInteractive
                 var extension = Path.GetExtension(file.FullName);
 
                 var path = AssetDataPath.Create(relativePath, fileName);
-
-                var cidFilename = EnvPath.kUserDataPath + $"/{relativePath}/{fileName}{extension}.cid";
-                using StreamReader sr = new(cidFilename);
-                var guid = sr.ReadToEnd();
-                sr.Close();
-                starq_company_paradox.AddAsset<PrefabAsset>(path, guid);
+                try
+                {
+                    var cidFilename = EnvPath.kUserDataPath + $"/{relativePath}/{fileName}{extension}.cid";
+                    using StreamReader sr = new(cidFilename);
+                    var guid = sr.ReadToEnd();
+                    sr.Close();
+                    starq_company_paradox.AddAsset<PrefabAsset>(path, guid);
+                }
+                catch (Exception)
+                {
+                    NotificationSystem.Push($"{nameof(CompanyModParadoxInteractive)}-CIDException",
+                        title: "SOMETHING WENT WRONG",
+                        text: $"Company Mod can't find the correct CID file(s)...",
+                        onClicked: () => NotificationSystem.Pop($"{nameof(CompanyModParadoxInteractive)}-CIDException")
+                );
+                }
+                
             }
 
             foreach (PrefabAsset prefabAsset in starq_company_paradox.GetAssets<PrefabAsset>())

@@ -9,7 +9,7 @@ Now, you can have Paradox Interactive as a Software Office or a Recreational Com
 
 This mod doesn't require APM or EAI.
 
-But a special shoutout to:
+But special shoutouts to:
 
 - [Konsi / Mimonsi](https://mods.paradoxplaza.com/authors/Mimonsi) for creating [Asset Packs Manager](https://mods.paradoxplaza.com/mods/78903/Windows)
 - [Alpha Gaming / Triton Supreme](https://mods.paradoxplaza.com/authors/Triton%20Supreme) for creating [Extra Asset Importer](https://mods.paradoxplaza.com/mods/80529/Windows)

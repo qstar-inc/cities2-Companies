@@ -11,11 +11,11 @@
 # WARNING: EXPERIMENTAL ASSET MOD
 This is an asset mod that takes best of both worlds and merge them together...
 
-Now, you can have Paradox Interactive as a Software Office or a Recreational Commercial in your city.
+Now you can have Paradox Interactive as a Software Office or a Recreational Commercial in your city.
 
 This mod doesn't require APM or EAI.
 
-But a special shoutout to:
+But special shoutouts to:
 * [Konsi / Mimonsi](https://mods.paradoxplaza.com/authors/Mimonsi) for creating [Asset Packs Manager](https://mods.paradoxplaza.com/mods/78903/Windows)
 * [Alpha Gaming / Triton Supreme](https://mods.paradoxplaza.com/authors/Triton%20Supreme) for creating [Extra Asset Importer](https://mods.paradoxplaza.com/mods/80529/Windows)
 
@@ -40,17 +40,15 @@ Take a screenshot and post it in CS:Modding Discord Server or CS Official Server
 	<!--Link to the forum post where the mod can be discussed-->
 	<ForumLink Value="" />
 	<!--Version of the mod-->
-	<ModVersion Value="1.0.1" />
+	<ModVersion Value="1.0.2" />
 	<!--Recommended version of the base game to use the mod-->
 	<GameVersion Value="1.1.*" />
 	<!--Dependency for the mod, can be set multiple times-->
 	<Dependency Id="75426" /> <!-- I18N Everywhere -->
 	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
-	<ChangeLog Value="1.0.1" />
+	<ChangeLog Value="1.0.2" />
 	<ChangeLog>
-* No longer "Concept"
-* Fixed duplication of decals when loaded
-* Fixed compatibility with APM
+* Added backup system for CID to prevent missing CID bug after changing playset.
 	</ChangeLog>
 	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon-->
 	<ExternalLink Type="github" Url="https://github.com/qstar-inc/" />

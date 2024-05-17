@@ -87,4 +87,11 @@
 		<Copy SourceFiles="@(AdditionalFilesToDeploy)" DestinationFiles="@(AdditionalFilesToDeploy->'$(DeployDir)\%(RecursiveDir)%(Filename)%(Extension)')" />
 	</Target>
 
+
+	<Target Name="Cleanup" AfterTargets="AfterBuild">
+		<ItemGroup>
+			<CleanTargets Include="$(DeployDir)/*.pdb" />
+		</ItemGroup>
+		<Delete Files="@(CleanTargets)" />
+	</Target>
 </Project>
