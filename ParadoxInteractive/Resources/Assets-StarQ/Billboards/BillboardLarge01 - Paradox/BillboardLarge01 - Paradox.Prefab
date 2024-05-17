@@ -1,0 +1,275 @@
+{
+    "$id": 0,
+    "$type": "0|Game.Prefabs.StaticObjectPrefab, Game",
+    "name": "BillboardLarge01 - Paradox",
+    "active": true,
+    "m_Meshes": {
+        "$id": 1,
+        "$type": "2|Game.Prefabs.ObjectMeshInfo[], Game",
+        "$rlength": 1,
+        "$rcontent": [
+            {
+                "$id": 2,
+                "$type": "3|Game.Prefabs.ObjectMeshInfo, Game",
+                "m_Mesh": $fstrref:"UnityGUID:da6abbfaaa4b9b44db265450808a5bb6",
+                "m_Position": {
+                    "$type": "4|Unity.Mathematics.float3, Unity.Mathematics",
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "m_Rotation": {
+                    "$type": "5|Unity.Mathematics.quaternion, Unity.Mathematics",
+                    "value": {
+                        "$type": "6|Unity.Mathematics.float4, Unity.Mathematics",
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    }
+                },
+                "m_RequireState": 0
+            }
+        ]
+    },
+    "components": {
+        "$id": 7,
+        "$type": "7|System.Collections.Generic.List`1[[Game.Prefabs.ComponentBase, Game]], mscorlib",
+        "$rlength": 8,
+        "$rcontent": [
+            {
+                "$id": 8,
+                "$type": "8|Game.Prefabs.ObsoleteIdentifiers, Game",
+                "name": "ObsoleteIdentifiers",
+                "active": true,
+                "m_PrefabIdentifiers": {
+                    "$id": 9,
+                    "$type": "9|Game.Prefabs.PrefabIdentifierInfo[], Game",
+                    "$rlength": 1,
+                    "$rcontent": [
+                        {
+                            "$id": 10,
+                            "$type": "10|Game.Prefabs.PrefabIdentifierInfo, Game",
+                            "m_Name": "Billboard_Large01_Paradox",
+                            "m_Type": "StaticObjectPrefab"
+                        }
+                    ]
+                }
+            },
+            {
+                "$id": 11,
+                "$type": "11|Game.Prefabs.SubObjectDefaultProbability, Game",
+                "name": "SubObjectDefaultProbability",
+                "active": true,
+                "m_DefaultProbability": 100,
+                "m_RotationSymmetry": 0
+            },
+            {
+                "$id": 12,
+                "$type": "12|Game.Prefabs.SpawnableObject, Game",
+                "name": "SpawnableObject",
+                "active": true,
+                "m_Placeholders": {
+                    "$id": 13,
+                    "$type": "13|Game.Prefabs.ObjectPrefab[], Game",
+                    "$rlength": 2,
+                    "$rcontent": [
+                        $fstrref:"UnityGUID:39295b9ca617cd54eae7f5c0d03bc9e7",
+                        $fstrref:"UnityGUID:ed5bee5b4fd16874b84cc4b62a2e2d3e"
+                    ]
+                },
+                "m_Probability": 100,
+                "m_RandomizationGroup": null
+            },
+            {
+                "$id": 14,
+                "$type": "14|Game.Prefabs.BrandObject, Game",
+                "name": "BrandObject",
+                "active": true,
+                "m_Brand": $fstrref:"CID:c822687fc16cb21998b4d169c272b1f7"
+            },
+            {
+                "$id": 15,
+                "$type": "15|Game.Prefabs.UIObject, Game",
+                "name": "UIObject",
+                "active": true,
+                "m_Group": null,
+                "m_Priority": 1,
+                "m_Icon": "coui://starq-companies-paradox/ParadoxPoster.png",
+                "m_LargeIcon": "",
+                "m_IsDebugObject": false
+            },
+            {
+                "$id": 16,
+                "$type": "16|Game.Prefabs.ObjectSubObjects, Game",
+                "name": "ObjectSubObjects",
+                "active": true,
+                "m_SubObjects": {
+                    "$id": 17,
+                    "$type": "17|Game.Prefabs.ObjectSubObjectInfo[], Game",
+                    "$rlength": 1,
+                    "$rcontent": [
+                        {
+                            "$id": 18,
+                            "$type": "18|Game.Prefabs.ObjectSubObjectInfo, Game",
+                            "m_Object": $fstrref:"CID:b5fe396c7217e1245874ac3856be4716",
+                            "m_Position": {
+                                "$type": 4,
+                                "x": 0,
+                                "y": 3.231,
+                                "z": 0.642
+                            },
+                            "m_Rotation": {
+                                "$type": 5,
+                                "value": {
+                                    "$type": 6,
+                                    "x": -4.329637285359678e-17,
+                                    "y": -0.7071067811865475,
+                                    "z": -0.7071067811865476,
+                                    "w": -4.329637285359677e-17
+                                }
+                            },
+                            "m_ParentMesh": 0,
+                            "m_GroupIndex": 0,
+                            "m_Probability": 100
+                        }
+                    ]
+                }
+            },
+            {
+                "$id": 19,
+                "$type": "19|Game.Prefabs.EditorAssetCategoryOverride, Game",
+                "name": "EditorAssetCategoryOverride",
+                "active": true,
+                "m_IncludeCategories": {
+                    "$id": 20,
+                    "$type": "20|System.String[], mscorlib",
+                    "$rlength": 3,
+                    "$rcontent": [
+                        "StarQ",
+                        "StarQ/Brand Graphics",
+                        "StarQ/Brand Graphics/ParadoxInteractive"
+                    ]
+                },
+                "m_ExcludeCategories": {
+                    "$id": 21,
+                    "$type": 20,
+                    "$rlength": 0,
+                    "$rcontent": [
+                    ]
+                }
+            },
+            {
+                "$id": 22,
+                "$type": "21|Game.Prefabs.EffectSource, Game",
+                "name": "EffectSource",
+                "active": true,
+                "m_Effects": {
+                    "$id": 23,
+                    "$type": "22|System.Collections.Generic.List`1[[Game.Prefabs.EffectSource+EffectSettings, Game]], mscorlib",
+                    "$rlength": 3,
+                    "$rcontent": [
+                        {
+                            "$id": 24,
+                            "$type": "23|Game.Prefabs.EffectSource+EffectSettings, Game",
+                            "m_Effect": $fstrref:"UnityGUID:6a69fd7569362ac458e38dd5d96facb7",
+                            "m_PositionOffset": {
+                                "$type": 4,
+                                "x": 2.66,
+                                "y": 1.3,
+                                "z": 1.76
+                            },
+                            "m_Rotation": {
+                                "$type": 5,
+                                "value": {
+                                    "$type": 6,
+                                    "x": -2.01836752E-08,
+                                    "y": -0.8870108,
+                                    "z": -0.46174866,
+                                    "w": 3.87724732E-08
+                                }
+                            },
+                            "m_Scale": {
+                                "$type": 4,
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            },
+                            "m_Intensity": 1,
+                            "m_ParentMesh": 0,
+                            "m_AnimationIndex": -1
+                        },
+                        {
+                            "$id": 25,
+                            "$type": 23,
+                            "m_Effect": $fstrref:"UnityGUID:6a69fd7569362ac458e38dd5d96facb7",
+                            "m_PositionOffset": {
+                                "$type": 4,
+                                "x": 0,
+                                "y": 1.3,
+                                "z": 1.76
+                            },
+                            "m_Rotation": {
+                                "$type": 5,
+                                "value": {
+                                    "$type": 6,
+                                    "x": -2.01836752E-08,
+                                    "y": -0.8870108,
+                                    "z": -0.46174866,
+                                    "w": 3.87724732E-08
+                                }
+                            },
+                            "m_Scale": {
+                                "$type": 4,
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            },
+                            "m_Intensity": 1,
+                            "m_ParentMesh": 0,
+                            "m_AnimationIndex": -1
+                        },
+                        {
+                            "$id": 26,
+                            "$type": 23,
+                            "m_Effect": $fstrref:"UnityGUID:6a69fd7569362ac458e38dd5d96facb7",
+                            "m_PositionOffset": {
+                                "$type": 4,
+                                "x": -2.66,
+                                "y": 1.3,
+                                "z": 1.76
+                            },
+                            "m_Rotation": {
+                                "$type": 5,
+                                "value": {
+                                    "$type": 6,
+                                    "x": -2.01836752E-08,
+                                    "y": -0.8870108,
+                                    "z": -0.46174866,
+                                    "w": 3.87724732E-08
+                                }
+                            },
+                            "m_Scale": {
+                                "$type": 4,
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            },
+                            "m_Intensity": 1,
+                            "m_ParentMesh": 0,
+                            "m_AnimationIndex": -1
+                        }
+                    ]
+                },
+                "m_AnimationCurves": {
+                    "$id": 27,
+                    "$type": "24|System.Collections.Generic.List`1[[Game.Prefabs.EffectSource+AnimationProperties, Game]], mscorlib",
+                    "$rlength": 0,
+                    "$rcontent": [
+                    ]
+                }
+            }
+        ]
+    },
+    "m_Circular": false
+}

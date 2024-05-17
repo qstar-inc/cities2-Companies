@@ -1,33 +1,58 @@
 ﻿<Publish>
 	<!--Id must be set in order to update existed mod. it is not required for publishing mod for the first time-->
-	<ModId Value="" />
+	<ModId Value="80939" />
 	<!--Name of the mod to display to players-->
-	<DisplayName Value="ParadoxInteractive" />
+	<DisplayName Value="Company Mod - Paradox Interactive" />
 	<!--Short description of the mod-->
-	<ShortDescription Value="" />
+	<ShortDescription Value="Adds 'Paradox Interactive'" />
 	<!--Long description of the mod. Single line or multi line. Supports minimal markdown subset-->
 	<!--LongDescription Value="" /-->
 	<LongDescription>
+# WARNING: EXPERIMENTAL ASSET MOD
+This is an asset mod that takes best of both worlds and merge them together...
 
+Now, you can have Paradox Interactive as a Software Office or a Recreational Commercial in your city.
+
+This mod doesn't require APM or EAI.
+
+But special shoutout for:
+* [Konsi / Mimonsi](https://mods.paradoxplaza.com/authors/Mimonsi) for creating [Asset Packs Manager](https://mods.paradoxplaza.com/mods/78903/Windows)
+* [Alpha Gaming / Triton Supreme](https://mods.paradoxplaza.com/authors/Triton%20Supreme) for creating [Extra Asset Importer]
+Those mods are the reason this is even possible.
+
+If this is fruitful, I'll be adding more assets to this and other companies as well.
+
+# What you need to do?
+Play the game and see if you can get any Paradox Interactive business/assets get spawned. See the screenshots to see all currently available billboards.
+Take a screenshot and post it in CS:Modding Discord Server or CS Official Server, don't forget to ping me!
+## ~~It is unknown if this mod will even work across systems.~~
 	</LongDescription>
 	<!--Thumbnail-->
 	<Thumbnail Value="Properties/Thumbnail.png" />
 	<!--Screenshot, can be set multiple times-->
-	<Screenshot Value="" />
+	<Screenshot Value="Properties/Screenshots/001_Paradox_Office.jpg" />
+	<Screenshot Value="Properties/Screenshots/002_Paradox_CRI.png" />
+	<Screenshot Value="Properties/Screenshots/003_CS2_Banhammer.png" />
+	<Screenshot Value="Properties/Screenshots/004_Paradox_CRI_CS2.png" />
+	<Screenshot Value="Properties/Screenshots/005_Billboards.png" />
 	<!--Tag, can be set multiple times-->
-	<Tag Value="" />
+	<Tag Value="Code Mod" />
 	<!--Link to the forum post where the mod can be discussed-->
 	<ForumLink Value="" />
 	<!--Version of the mod-->
-	<ModVersion Value="1.0" />
+	<ModVersion Value="1.0.1" />
 	<!--Recommended version of the base game to use the mod-->
-	<GameVersion Value="1.0.*" />
+	<GameVersion Value="1.1.*" />
 	<!--Dependency for the mod, can be set multiple times-->
-	<Dependency Id="" />
+	<Dependency Id="75426" /> <!-- I18N Everywhere -->
 	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
-	<ChangeLog Value="" />
-	<!--ChangeLog>
-	</ChangeLog-->
+	<ChangeLog Value="1.0.1" />
+	<ChangeLog>
+* No longer "Concept"
+* Fixed duplication of decals when loaded
+* Fixed compatibility with APM
+	</ChangeLog>
 	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon-->
-	<ExternalLink Type="" Url="" />
+	<ExternalLink Type="github" Url="https://github.com/qstar-inc/" />
+	<ExternalLink Type="discord" Url="https://discord.com/channels/1024242828114673724/1240918216461520918/" />
 </Publish>

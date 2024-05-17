@@ -1,0 +1,76 @@
+{
+    "$id": 0,
+    "$type": "0|Game.Prefabs.RenderPrefab, Game",
+    "name": "ParadoxInteractive BillboardRoundLarge Decal_RenderPrefab",
+    "active": true,
+    "components": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[Game.Prefabs.ComponentBase, Game]], mscorlib",
+        "$rlength": 2,
+        "$rcontent": [
+            {
+                "$id": 2,
+                "$type": "2|Game.Prefabs.DecalProperties, Game",
+                "name": "DecalProperties",
+                "active": true,
+                "m_TextureArea": {
+                    "$type": "3|Colossal.Mathematics.Bounds2, Colossal.Mathematics",
+                    "min": {
+                        "$type": "4|Unity.Mathematics.float2, Unity.Mathematics",
+                        "x": 0,
+                        "y": 0
+                    },
+                    "max": {
+                        "$type": 4,
+                        "x": 1,
+                        "y": 1
+                    }
+                },
+                "m_RendererPriority": 0,
+                "m_LayerMask": 36,
+                "m_EnableInfoviewColor": false
+            },
+            {
+                "$id": 15,
+                "$type": "15|Game.Prefabs.UIObject, Game",
+                "name": "UIObject",
+                "active": true,
+                "m_Group": null,
+                "m_Priority": 1,
+                "m_Icon": "coui://starq-companies-paradox/ParadoxLogo.png",
+                "m_LargeIcon": "",
+                "m_IsDebugObject": false
+            }
+        ]
+    },
+    "m_GeometryAsset": $fstrref:"CID:d85a874d9f634b38a5cee1c0447059f0",
+    "m_SurfaceAssets": {
+        "$id": 3,
+        "$type": "5|Colossal.IO.AssetDatabase.AssetReference`1[[Colossal.IO.AssetDatabase.SurfaceAsset, Colossal.IO.AssetDatabase, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]][], Colossal.IO.AssetDatabase",
+        "$rlength": 1,
+        "$rcontent": [
+            $fstrref:"CID:05a15821487049eca6462f64d3fcea06"
+        ]
+    },
+    "m_Bounds": {
+        "$type": "6|Colossal.Mathematics.Bounds3, Colossal.Mathematics",
+        "min": {
+            "$type": "7|Unity.Mathematics.float3, Unity.Mathematics",
+            "x": -1.34,
+            "y": -0.5,
+            "z": -1.34
+        },
+        "max": {
+            "$type": 7,
+            "x": 1.34,
+            "y": 0.5,
+            "z": 1.34
+        }
+    },
+    "m_SurfaceArea": 0,
+    "m_IndexCount": 1,
+    "m_VertexCount": 24,
+    "m_MeshCount": 1,
+    "m_IsImpostor": false,
+    "m_ManualVTRequired": false
+}

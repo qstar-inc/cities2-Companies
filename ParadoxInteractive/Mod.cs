@@ -1,20 +1,29 @@
 ﻿using Colossal.IO.AssetDatabase;
-using Colossal.Logging;
+//using Colossal.Logging;
 using Colossal.PSI.Environment;
 using Colossal.UI;
-using Game;
 using Game.Modding;
 using Game.Prefabs;
 using Game.SceneFlow;
+using Game;
+using StreamReader = System.IO.StreamReader;
 using System.Collections.Generic;
 using System.IO;
-using StreamReader = System.IO.StreamReader;
+
+internal readonly struct StarQ_Company_Paradox : IAssetDatabaseDescriptor
+{
+    public string name => "starq-company-paradox";
+
+    public IAssetFactory assetFactory => AssetDatabase.user.dataSource.assetFactory;
+
+    public IDataSourceProvider dataSourceProvider => AssetDatabase.user.dataSource;
+}
 
 namespace CompanyModParadoxInteractive
 {
     public class Mod : IMod
     {
-        public static ILog log = LogManager.GetLogger($"{nameof(CompanyModParadoxInteractive)}.{nameof(Mod)}").SetShowsErrorsInUI(false);
+        //public static ILog log = LogManager.GetLogger($"{nameof(CompanyModParadoxInteractive)}.{nameof(Mod)}").SetShowsErrorsInUI(false);
         public static string uiHostName = "starq-companies-paradox";
         private static PrefabSystem prefabSystem;
 
@@ -25,10 +34,15 @@ namespace CompanyModParadoxInteractive
             if (GameManager.instance.modManager.TryGetExecutableAsset(this, out var asset))
                 //log.Info($"Current mod asset at {asset.path}");
                 UIManager.defaultUISystem.AddHostLocation(uiHostName, Path.Combine(Path.GetDirectoryName(asset.path), "Thumbs"), false);
-            prefabSystem = updateSystem.World.GetOrCreateSystemManaged<PrefabSystem>();
 
-            Dictionary<string, List<FileInfo>> modAssets = [];
-            var modDir = Path.GetDirectoryName(asset.path);
+            prefabSystem = updateSystem.World.GetOrCreateSystemManaged<PrefabSystem>();
+            JustDoIt(asset.path);
+        }
+
+        private void JustDoIt(string assetpath) {
+            AssetDatabase<StarQ_Company_Paradox> starq_company_paradox = new();
+            
+            var modDir = Path.GetDirectoryName(assetpath);
             var assetDir = new DirectoryInfo(Path.Combine(modDir, "Assets-StarQ"));
 
             List<FileInfo> files = [];
@@ -47,32 +61,21 @@ namespace CompanyModParadoxInteractive
                 using StreamReader sr = new(cidFilename);
                 var guid = sr.ReadToEnd();
                 sr.Close();
+                starq_company_paradox.AddAsset<PrefabAsset>(path, guid);
+            }
 
-                if (extension == ".Prefab")
-                {
-                    AssetDatabase.user.AddAsset<PrefabAsset>(path, guid);
-                }
-                else if (extension == ".Geometry")
-                {
-                    AssetDatabase.user.AddAsset<GeometryAsset>(path, guid);
-                }
-                else if (extension == ".Surface")
-                {
-                    AssetDatabase.user.AddAsset<SurfaceAsset>(path, guid);
-                }
-                else if (extension == ".Texture")
-                {
-                    AssetDatabase.user.AddAsset<TextureAsset>(path, guid);
-                }
-
+            foreach (PrefabAsset prefabAsset in starq_company_paradox.GetAssets<PrefabAsset>())
+            {
+                PrefabBase prefabBase = prefabAsset.Load() as PrefabBase;
+                prefabSystem.AddPrefab(prefabBase);
             }
         }
 
-        static void ProcessDirectory(DirectoryInfo directory, List<FileInfo> files)
+        private void ProcessDirectory(DirectoryInfo directory, List<FileInfo> files)
         {
             foreach (FileInfo file in directory.GetFiles())
             {
-                if (IsDesiredExtension(file.Extension))
+                if (file.Extension == ".Prefab")
                 {
                     files.Add(file);
                 }
@@ -84,15 +87,10 @@ namespace CompanyModParadoxInteractive
             }
         }
 
-        static bool IsDesiredExtension(string extension)
-        {
-            return extension == ".Prefab" || extension == ".Geometry" || extension == ".Surface" || extension == ".Texture";
-        }
-
         public void OnDispose()
         {
-            //log.Info(nameof(OnDispose));
             UIManager.defaultUISystem.RemoveHostLocation(uiHostName);
         }
     }
+    
 }
