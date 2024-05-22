@@ -32,10 +32,11 @@
     "m_Companies": {
         "$id": 5,
         "$type": "5|Game.Prefabs.CompanyPrefab[], Game",
-        "$rlength": 2,
+        "$rlength": 3,
         "$rcontent": [
             $fstrref:"UnityGUID:00d47ea8c9d1e444e8ac307249d12365",
-            $fstrref:"UnityGUID:fbe06e7ed10f09f4db1b45cbac0b48f6"
+            $fstrref:"UnityGUID:fbe06e7ed10f09f4db1b45cbac0b48f6",
+            $fstrref:"UnityGUID:24c2e00cda3b40841b1b2d33dc236fe6"
         ]
     },
     "m_BrandColors": {
