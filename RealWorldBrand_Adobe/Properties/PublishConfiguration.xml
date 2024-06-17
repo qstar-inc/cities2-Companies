@@ -2,7 +2,7 @@
 	<!--Id must be set in order to update existed mod. it is not required for publishing mod for the first time-->
 	<ModId Value="83168" />
 	<!--Name of the mod to display to players-->
-	<DisplayName Value="Real World Brand: Adobe" />
+	<DisplayName Value="Real World Brands: Adobe" />
 	<!--Short description of the mod-->
 	<ShortDescription Value="Adds 'Adobe' as a Software Company" />
 	<!--Long description of the mod. Single line or multi line. Supports minimal markdown subset-->
@@ -25,7 +25,7 @@ Additionally includes 43 decals for 56 brand graphics.
 # CREDIT
 
 * The custom decals in this package were provided by @m00n22 (Discord) and built using the [Brand Decal Template](https://github.com/qstar-inc/Tidbits/tree/main/cities2/BrandDecalTemplate).
-Want to contribute to your favourite brand? Join [Nyoko](https://mods.paradoxplaza.com/author/Nyyoko)'s SkyLinx server.
+Want to contribute to your favourite brand? Join [Nyoko](https://mods.paradoxplaza.com/authors/Nyyoko)'s SkyLinx server.
 	</LongDescription>
 	<!--Thumbnail-->
 	<Thumbnail Value="Properties/Thumbnail.png" />
