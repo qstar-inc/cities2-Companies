@@ -1,0 +1,46 @@
+﻿<Publish>
+	<!--Id must be set in order to update existed mod. it is not required for publishing mod for the first time-->
+	<ModId Value="83168" />
+	<!--Name of the mod to display to players-->
+	<DisplayName Value="Real World Brand: Adobe" />
+	<!--Short description of the mod-->
+	<ShortDescription Value="Adds 'Adobe' as a Software Company" />
+	<!--Long description of the mod. Single line or multi line. Supports minimal markdown subset-->
+	<!--LongDescription Value="This is a long description" /-->
+	<LongDescription>
+**Hey guys, it's star q back with another revolutionary mod for cities skylines two.**
+
+# Real World Brands: Adobe
+
+This mod adds "Abobe Inc." as a Software Company in the game. Can spawn on any zones which can spawn a 'Software Company' (only Office in Vanilla).
+
+Additionally includes 43 decals for 56 brand graphics.
+
+# DISCLAIMER
+
+* This mod requires ***Asset Packs Manager*** which is highly experimental. This mod shouldn't break the save game. But subscribing to assets that require this without the dependency will pop up errors. Worst case you'll get error popups on game load and/or grey boxes in save. But either way, YOU ARE RESPONSIBLE for any damage. Contact me on Discord and I'll try to help you recover anyway.
+* Including a brand/company in these mods does not imply endorsement nor disapproval of the real-world counterpart's actions or behaviour.
+* Includes copyrighted/trademarked content. All trademarks are property of their respective owners in the US and other countries. Nominative Fair Use applies.
+	</LongDescription>
+	<!--Thumbnail-->
+	<Thumbnail Value="Properties/Thumbnail.png" />
+	<!--Screenshot, can be set multiple times-->
+	<Screenshot Value="Properties/Screenshot.png" />
+	<!--Tag, can be set multiple times-->
+	<Tag Value="Code Mod" />
+	<!--Link to the forum post where the mod can be discussed-->
+	<ForumLink Value="" />
+	<!--Version of the mod-->
+	<ModVersion Value="1.0" />
+	<!--Recommended version of the base game to use the mod-->
+	<GameVersion Value="1.1.*" />
+	<!--Dependency for the mod, can be set multiple times-->
+	<Dependency Id="75426" /> <!-- I18n EveryWhere -->
+	<Dependency Id="78903" /> <!-- Asset Packs Manager -->
+	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
+	<ChangeLog Value="" />
+	<!--ChangeLog>
+	</ChangeLog-->
+	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon-->
+	<ExternalLink Type="github" Url="https://github.com/qstar-inc/cities2-Companies" />
+</Publish>

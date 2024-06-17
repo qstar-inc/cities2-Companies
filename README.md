@@ -1,13 +1,23 @@
 <img src="https://raw.githubusercontent.com/qstar-inc/cities2-companies/master/ParadoxInteractive/Properties/Thumbnail.png" width="300"/>
+
 # Company Mod - Paradox Interactive
+
+<img src="https://raw.githubusercontent.com/qstar-inc/cities2-companies/master/ParadoxInteractive/Properties/Thumbnail.png" width="300"/>
+
+# Real World Petrochemicals
+
+<img src="https://raw.githubusercontent.com/qstar-inc/cities2-companies/master/ParadoxInteractive/Properties/Thumbnail.png" width="300"/>
+
+# Real World Brands: Adobe
 
 ## WARNING: EXPERIMENTAL ASSET MOD
 
-This is an asset mod that takes best of both worlds and merge them together...
+These are asset mods that takes best of both worlds and merge them together...
 
-Now, you can have Paradox Interactive as a Software Office or a Recreational Commercial in your city.
+Now, you can have various real world brands in your city.
 
-This mod doesn't require APM or EAI.
+Paradox mod doesn't require APM or EAI.
+Other mod doesn't require EAI.
 
 But special shoutouts to:
 
@@ -16,7 +26,7 @@ But special shoutouts to:
 
 Those mods are the reason this is even possible.
 
-If this is fruitful, I'll be adding more assets to this and other companies as well.
+
 
 # What you need to do?
 
@@ -25,4 +35,7 @@ Take a screenshot and post it in CS:Modding Discord Server or CS Official Server
 
 # DISCLAIMER
 
-© 2024 [StarQ](https://github.com/qstar-inc/). All trademarks are property of their respective owners in the US and other countries.
+© 2024 [StarQ](https://github.com/qstar-inc/).
+* Some mod requires ***Asset Packs Manager*** which is highly experimental. This mod shouldn't break the save game. But subscribing to assets that require this without the dependency will pop up errors. Worst case you'll get error popups on game load and/or grey boxes in save. But either way, YOU ARE RESPONSIBLE for any damage.
+* Including a brand/company in these mods does not imply endorsement nor disapproval of the real-world counterpart's actions or behaviour.
+* Includes copyrighted/trademarked content. All trademarks are property of their respective owners in the US and other countries. Nominative Fair Use applies.

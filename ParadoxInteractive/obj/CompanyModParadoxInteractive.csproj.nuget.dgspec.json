@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\_Everything Else\\Codes\\qstar-inc\\cities2-Companies\\ParadoxInteractive\\CompanyModParadoxInteractive.csproj": {}
+    "D:\\_Everything Else\\Codes\\qstar-inc\\ModsPublished\\cities2-Companies\\ParadoxInteractive\\CompanyModParadoxInteractive.csproj": {}
   },
   "projects": {
-    "D:\\_Everything Else\\Codes\\qstar-inc\\cities2-Companies\\ParadoxInteractive\\CompanyModParadoxInteractive.csproj": {
+    "D:\\_Everything Else\\Codes\\qstar-inc\\ModsPublished\\cities2-Companies\\ParadoxInteractive\\CompanyModParadoxInteractive.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\_Everything Else\\Codes\\qstar-inc\\cities2-Companies\\ParadoxInteractive\\CompanyModParadoxInteractive.csproj",
+        "projectUniqueName": "D:\\_Everything Else\\Codes\\qstar-inc\\ModsPublished\\cities2-Companies\\ParadoxInteractive\\CompanyModParadoxInteractive.csproj",
         "projectName": "CompanyModParadoxInteractive",
-        "projectPath": "D:\\_Everything Else\\Codes\\qstar-inc\\cities2-Companies\\ParadoxInteractive\\CompanyModParadoxInteractive.csproj",
+        "projectPath": "D:\\_Everything Else\\Codes\\qstar-inc\\ModsPublished\\cities2-Companies\\ParadoxInteractive\\CompanyModParadoxInteractive.csproj",
         "packagesPath": "C:\\Users\\Qoushik\\.nuget\\packages\\",
-        "outputPath": "D:\\_Everything Else\\Codes\\qstar-inc\\cities2-Companies\\ParadoxInteractive\\obj\\",
+        "outputPath": "D:\\_Everything Else\\Codes\\qstar-inc\\ModsPublished\\cities2-Companies\\ParadoxInteractive\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Qoushik\\AppData\\Roaming\\NuGet\\NuGet.Config"

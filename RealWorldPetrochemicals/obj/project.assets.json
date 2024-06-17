@@ -1,0 +1,55 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": []
+  },
+  "packageFolders": {
+    "C:\\Users\\Qoushik\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\_Everything Else\\Codes\\qstar-inc\\ModsPublished\\cities2-Companies\\RealWorldPetrochemicals\\RealWorldPetrochemicals.csproj",
+      "projectName": "RealWorldPetrochemicals",
+      "projectPath": "D:\\_Everything Else\\Codes\\qstar-inc\\ModsPublished\\cities2-Companies\\RealWorldPetrochemicals\\RealWorldPetrochemicals.csproj",
+      "packagesPath": "C:\\Users\\Qoushik\\.nuget\\packages\\",
+      "outputPath": "D:\\_Everything Else\\Codes\\qstar-inc\\ModsPublished\\cities2-Companies\\RealWorldPetrochemicals\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Qoushik\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "https://www.nuget.org/api/v2": {}
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "targetAlias": "net472",
+        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
