@@ -1,0 +1,54 @@
+﻿<Publish>
+	<!--Id must be set in order to update existed mod. it is not required for publishing mod for the first time-->
+	<ModId Value="84186" />
+	<!--Name of the mod to display to players-->
+	<DisplayName Value="RealWorldBrand_Discord" />
+	<!--Short description of the mod-->
+	<ShortDescription Value="Adds 'Discord' as a Software Company" />
+	<!--Long description of the mod. Single line or multi line. Supports minimal markdown subset-->
+	<!--LongDescription Value="This is a long description" /-->
+	<LongDescription>
+**Hey guys, it's star q back with another revolutionary mod for cities skylines two.**
+
+# Real World Brands: Discord
+
+This mod adds "Discord Inc." as a Software Company in the game. Can spawn on any zone which can spawn a 'Software Company' (only Office in Vanilla).
+
+*Unlike my other mods, I wasn't able to test it throughly. But everything should work well. If there's any issue, you'll find me around. Just let me know.*
+
+Additionally includes 43 decals for 56 brand graphics.
+
+# DISCLAIMER
+
+* This mod requires ***Asset Packs Manager*** which is highly experimental. This mod shouldn't break the save game. But subscribing to assets that require this without the dependency will pop up errors. Worst case you'll get error popups on game load and/or grey boxes in save. But either way, YOU ARE RESPONSIBLE for any damage. Contact me on Discord and I'll try to help you recover anyway.
+* Including a brand/company in these mods does not imply endorsement nor disapproval of the real-world counterpart's actions or behaviour.
+* Includes copyrighted/trademarked content. All trademarks are property of their respective owners in the US and other countries. Nominative Fair Use applies.
+
+# CREDIT
+
+* The custom decals in this package were built using the [Brand Decal Template](https://github.com/qstar-inc/Tidbits/tree/main/cities2/BrandDecalTemplate).
+Want to contribute to your favourite brand? Join [Nyoko](https://mods.paradoxplaza.com/authors/Nyyoko)'s SkyLinx server.
+	</LongDescription>
+	<!--Thumbnail-->
+	<Thumbnail Value="Properties/Thumbnail.png" />
+	<!--Screenshot, can be set multiple times-->
+	<Screenshot Value="Properties/Screenshot2.png" />
+	<Screenshot Value="Properties/Screenshot3.png" />
+	<!--Tag, can be set multiple times-->
+	<Tag Value="" />
+	<!--Link to the forum post where the mod can be discussed-->
+	<ForumLink Value="" />
+	<!--Version of the mod-->
+	<ModVersion Value="1.0" />
+	<!--Recommended version of the base game to use the mod-->
+	<GameVersion Value="*" />
+	<!--Dependency for the mod, can be set multiple times-->
+	<Dependency Id="75426" /> <!-- I18n EveryWhere -->
+	<Dependency Id="78903" /> <!-- Asset Packs Manager -->
+	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
+	<ChangeLog Value="1.0" />
+	<!--ChangeLog>
+	</ChangeLog-->
+	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon, buymeacoffee, kofi, crowdin, gitlab-->
+	<ExternalLink Type="github" Url="https://github.com/qstar-inc/cities2-companies" />
+</Publish>
