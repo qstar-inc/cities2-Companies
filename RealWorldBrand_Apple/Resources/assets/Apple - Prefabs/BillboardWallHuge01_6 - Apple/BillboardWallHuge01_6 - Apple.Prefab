@@ -1,0 +1,277 @@
+{
+    "$id": 0,
+    "$type": "0|Game.Prefabs.StaticObjectPrefab, Game",
+    "name": "StarQ BillboardWallHuge01_6 - Apple",
+    "active": true,
+    "m_Meshes": {
+        "$id": 1,
+        "$type": "2|Game.Prefabs.ObjectMeshInfo[], Game",
+        "$rlength": 2,
+        "$rcontent": [
+            {
+                "$id": 2,
+                "$type": "3|Game.Prefabs.ObjectMeshInfo, Game",
+                "m_Mesh": $fstrref:"UnityGUID:3a1e6a6fd818b384f91daf4ea5c54143",
+                "m_Position": {
+                    "$type": "4|Unity.Mathematics.float3, Unity.Mathematics",
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "m_Rotation": {
+                    "$type": "5|Unity.Mathematics.quaternion, Unity.Mathematics",
+                    "value": {
+                        "$type": "6|Unity.Mathematics.float4, Unity.Mathematics",
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    }
+                },
+                "m_RequireState": 0
+            },
+            {
+                "$id": 102,
+                "$type": 3,
+                "m_Mesh": $fstrref:"CID:a13e96ea7760fa112351c78a1307217e",
+                "m_Position": {
+                    "$type": 4,
+                    "x": 0,
+                    "y": 0.412,
+                    "z": 0.3
+                },
+                "m_Rotation": {
+                    "$type": 5,
+                    "value": {
+                        "$type": 6,
+                        "x": -0.0,
+                        "y": -0.707,
+                        "z": -0.707,
+                        "w": -0.0
+                    }
+                },
+                "m_RequireState": 0
+            }
+        ]
+    },
+    "m_Circular": false,
+    "components": {
+        "$id": 7,
+        "$type": "7|System.Collections.Generic.List`1[[Game.Prefabs.ComponentBase, Game]], mscorlib",
+        "$rlength": 7,
+        "$rcontent": [
+            {
+                "$id": 11,
+                "$type": "11|Game.Prefabs.SubObjectDefaultProbability, Game",
+                "name": "SubObjectDefaultProbability",
+                "active": true,
+                "m_DefaultProbability": 100,
+                "m_RotationSymmetry": 0
+            },
+            {
+                "$id": 12,
+                "$type": "12|Game.Prefabs.SpawnableObject, Game",
+                "name": "SpawnableObject",
+                "active": true,
+                "m_Placeholders": {
+                    "$id": 13,
+                    "$type": "13|Game.Prefabs.ObjectPrefab[], Game",
+                    "$rlength": 2,
+                    "$rcontent": [
+                        $fstrref:"UnityGUID:dd965d822be18a94d92451755bf82042",
+                        $fstrref:"UnityGUID:b828678d6b5fa9546b37547b70cd3973"
+                    ]
+                },
+                "m_Probability": 100,
+                "m_RandomizationGroup": null
+            },
+            {
+                "$id": 14,
+                "$type": "14|Game.Prefabs.BrandObject, Game",
+                "name": "BrandObject",
+                "active": true,
+                "m_Brand": $fstrref:"CID:fa1a8a79045fbbc42a82c6fa144eb618"
+            },
+            {
+                "$id": 15,
+                "$type": "15|Game.Prefabs.UIObject, Game",
+                "name": "UIObject",
+                "active": true,
+                "m_Group": null,
+                "m_Priority": 1,
+                "m_Icon": null,
+                "m_LargeIcon": "",
+                "m_IsDebugObject": false
+            },
+            {
+                "$id": 16,
+                "$type": "16|Game.Prefabs.EditorAssetCategoryOverride, Game",
+                "name": "EditorAssetCategoryOverride",
+                "active": true,
+                "m_IncludeCategories": {
+                    "$id": 17,
+                    "$type": "17|System.String[], mscorlib",
+                    "$rlength": 1,
+                    "$rcontent": [
+                        "StarQ/Brand Graphics/Apple"
+                    ]
+                },
+                "m_ExcludeCategories": {
+                    "$id": 18,
+                    "$type": 17,
+                    "$rlength": 0,
+                    "$rcontent": [
+                    ]
+                }
+            },
+            {
+                "$id": 22,
+                "$type": "21|Game.Prefabs.EffectSource, Game",
+                "name": "EffectSource",
+                "active": true,
+                "m_Effects": {
+                    "$id": 23,
+                    "$type": "22|System.Collections.Generic.List`1[[Game.Prefabs.EffectSource+EffectSettings, Game]], mscorlib",
+                    "$rlength": 4,
+                    "$rcontent": [
+                        {
+                            "$id": 24,
+                            "$type": "23|Game.Prefabs.EffectSource+EffectSettings, Game",
+                            "m_Effect": $fstrref:"UnityGUID:6a69fd7569362ac458e38dd5d96facb7",
+                            "m_PositionOffset": {
+                                "$type": 4,
+                                "x": 4.33,
+                                "y": 3.34,
+                                "z": 2.2
+                            },
+                            "m_Rotation": {
+                                "$type": 5,
+                                "value": {
+                                    "$type": 6,
+                                    "x": -2.34861144E-08,
+                                    "y": 0.8433914,
+                                    "z": -0.537299633,
+                                    "w": -3.686581E-08
+                                }
+                            },
+                            "m_Scale": {
+                                "$type": 4,
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            },
+                            "m_Intensity": 1,
+                            "m_ParentMesh": 0,
+                            "m_AnimationIndex": -1
+                        },
+                        {
+                            "$id": 25,
+                            "$type": 23,
+                            "m_Effect": $fstrref:"UnityGUID:6a69fd7569362ac458e38dd5d96facb7",
+                            "m_PositionOffset": {
+                                "$type": 4,
+                                "x": 1.44,
+                                "y": 3.34,
+                                "z": 2.2
+                            },
+                            "m_Rotation": {
+                                "$type": 5,
+                                "value": {
+                                    "$type": 6,
+                                    "x": -2.34861144E-08,
+                                    "y": 0.8433914,
+                                    "z": -0.537299633,
+                                    "w": -3.686581E-08
+                                }
+                            },
+                            "m_Scale": {
+                                "$type": 4,
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            },
+                            "m_Intensity": 1,
+                            "m_ParentMesh": 0,
+                            "m_AnimationIndex": -1
+                        },
+                        {
+                            "$id": 26,
+                            "$type": 23,
+                            "m_Effect": $fstrref:"UnityGUID:6a69fd7569362ac458e38dd5d96facb7",
+                            "m_PositionOffset": {
+                                "$type": 4,
+                                "x": -1.44,
+                                "y": 3.34,
+                                "z": 2.2
+                            },
+                            "m_Rotation": {
+                                "$type": 5,
+                                "value": {
+                                    "$type": 6,
+                                    "x": -2.348611E-08,
+                                    "y": 0.8433914,
+                                    "z": -0.537299633,
+                                    "w": -3.686581E-08
+                                }
+                            },
+                            "m_Scale": {
+                                "$type": 4,
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            },
+                            "m_Intensity": 1,
+                            "m_ParentMesh": 0,
+                            "m_AnimationIndex": -1
+                        },
+                        {
+                            "$id": 27,
+                            "$type": 23,
+                            "m_Effect": $fstrref:"UnityGUID:6a69fd7569362ac458e38dd5d96facb7",
+                            "m_PositionOffset": {
+                                "$type": 4,
+                                "x": -4.33,
+                                "y": 3.34,
+                                "z": 2.2
+                            },
+                            "m_Rotation": {
+                                "$type": 5,
+                                "value": {
+                                    "$type": 6,
+                                    "x": -2.34860984E-08,
+                                    "y": 0.8433914,
+                                    "z": -0.537299633,
+                                    "w": -3.68658E-08
+                                }
+                            },
+                            "m_Scale": {
+                                "$type": 4,
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            },
+                            "m_Intensity": 1,
+                            "m_ParentMesh": 0,
+                            "m_AnimationIndex": -1
+                        }
+                    ]
+                },
+                "m_AnimationCurves": {
+                    "$id": 28,
+                    "$type": "24|System.Collections.Generic.List`1[[Game.Prefabs.EffectSource+AnimationProperties, Game]], mscorlib",
+                    "$rlength": 0,
+                    "$rcontent": [
+                    ]
+                }
+            },
+            {
+                "$id": 50,
+                "$type": "50|Game.Prefabs.AttachedObject, Game",
+                "name": "AttachedObject",
+                "active": true,
+                "m_AttachType": 1,
+                "m_AttachOffset": 0
+            },
+        ]
+    }
+}

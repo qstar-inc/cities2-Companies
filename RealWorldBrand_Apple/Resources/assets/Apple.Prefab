@@ -1,0 +1,64 @@
+{
+    "$id": 0,
+    "$type": "0|Game.Prefabs.BrandPrefab, Game",
+    "name": "Apple",
+    "active": true,
+    "components": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[Game.Prefabs.ComponentBase, Game]], mscorlib",
+        "$rlength": 1,
+        "$rcontent": [
+            {
+                "$id": 2,
+                "$type": "2|Game.Prefabs.EditorAssetCategoryOverride, Game",
+                "name": "EditorAssetCategoryOverride",
+                "active": true,
+                "m_IncludeCategories": {
+                    "$id": 3,
+                    "$type": "3|System.String[], mscorlib",
+                    "$rlength": 1,
+                    "$rcontent": [
+                        "StarQ/Brands"
+                    ]
+                },
+                "m_ExcludeCategories": null
+            }
+        ]
+    },
+    "m_Companies": {
+        "$id": 4,
+        "$type": "4|Game.Prefabs.CompanyPrefab[], Game",
+        "$rlength": 1,
+        "$rcontent": [
+            $fstrref:"UnityGUID:00d47ea8c9d1e444e8ac307249d12365"
+        ]
+    },
+    "m_BrandColors": {
+        "$id": 5,
+        "$type": "5|UnityEngine.Color[], UnityEngine.CoreModule",
+        "$rlength": 3,
+        "$rcontent": [
+            {
+                "$type": "6|UnityEngine.Color, UnityEngine.CoreModule",
+                0.068,
+                0.068,
+                0.068,
+                1
+            },
+            {
+                "$type": 6,
+                0.970,
+                0.970,
+                0.970,
+                1
+            },
+            {
+                "$type": 6,
+                0.157,
+                0.157,
+                0.157,
+                1
+            }
+        ]
+    }
+}
