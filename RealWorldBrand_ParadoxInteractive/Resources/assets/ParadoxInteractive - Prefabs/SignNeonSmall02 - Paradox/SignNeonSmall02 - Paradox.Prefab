@@ -33,7 +33,7 @@
             {
                 "$id": 102,
                 "$type": 3,
-                "m_Mesh": $fstrref:"CID:aeaba126f487f819626ed49ec795f4de",
+                "m_Mesh": $fstrref:"CID:7f0b008954e4e7345f3ce624bfe33543",
                 "m_Position": {
                     "$type": 4,
                     "x": 0,
@@ -89,7 +89,7 @@
                 "$type": "14|Game.Prefabs.BrandObject, Game",
                 "name": "BrandObject",
                 "active": true,
-                "m_Brand": $fstrref:"CID:c822687fc16cb21998b4d169c272b1f7"
+                "m_Brand": $fstrref:"CID:a4d405f948e178a1576bae525bdf12fa"
             },
             {
                 "$id": 15,
@@ -98,7 +98,7 @@
                 "active": true,
                 "m_Group": null,
                 "m_Priority": 1,
-                "m_Icon": coui://starq-rwb-ParadoxInteractive/CS2Poster.png,
+                "m_Icon": "coui://starq-rwb-paradox/CS2Poster.png",
                 "m_LargeIcon": "",
                 "m_IsDebugObject": false
             },

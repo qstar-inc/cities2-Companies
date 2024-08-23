@@ -18,7 +18,7 @@
                     "$type": "3|System.String[], mscorlib",
                     "$rlength": 1,
                     "$rcontent": [
-                        "StarQ/Brands/Adobe"
+                        "StarQ/Brands"
                     ]
                 },
                 "m_ExcludeCategories": {

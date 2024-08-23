@@ -33,7 +33,7 @@
             {
                 "$id": 102,
                 "$type": 3,
-                "m_Mesh": $fstrref:"CID:27ce14f7fe4cca80d644c06a81ca9766",
+                "m_Mesh": $fstrref:"CID:cfadebff07e218d2ae8705a2d3458031",
                 "m_Position": {
                     "$type": 4,
                     "x": 0,
@@ -55,7 +55,7 @@
             {
                 "$id": 104,
                 "$type": 3,
-                "m_Mesh": $fstrref:"CID:27ce14f7fe4cca80d644c06a81ca9766",
+                "m_Mesh": $fstrref:"CID:cfadebff07e218d2ae8705a2d3458031",
                 "m_Position": {
                     "$type": 4,
                     "x": 0,
@@ -111,7 +111,7 @@
                 "$type": "14|Game.Prefabs.BrandObject, Game",
                 "name": "BrandObject",
                 "active": true,
-                "m_Brand": $fstrref:"CID:c822687fc16cb21998b4d169c272b1f7"
+                "m_Brand": $fstrref:"CID:a4d405f948e178a1576bae525bdf12fa"
             },
             {
                 "$id": 15,
@@ -120,7 +120,7 @@
                 "active": true,
                 "m_Group": null,
                 "m_Priority": 1,
-                "m_Icon": coui://starq-rwb-ParadoxInteractive/ParadoxSteamSale2024-80percent.png,
+                "m_Icon": "coui://starq-rwb-paradox/ParadoxSteamSale2024-80percent.png",
                 "m_LargeIcon": "",
                 "m_IsDebugObject": false
             },

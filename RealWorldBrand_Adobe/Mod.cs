@@ -1,25 +1,30 @@
 ﻿//using Colossal.Logging;
+using Colossal.UI;
 using Game;
 using Game.Modding;
+using Game.SceneFlow;
+using System.IO;
 
 namespace RealWorldBrand_Adobe
 {
     public class Mod : IMod
     {
-        //public static ILog log = LogManager.GetLogger($"{nameof(RealWorldPetrochemicals)}.{nameof(Mod)}").SetShowsErrorsInUI(false);
+        public static string Name = "Real World Brand: Adobe";
+        public static string Version = "1.0.2";
+        public static string Author = "StarQ";
+
+        public static string uiHostName = "starq-rwb-adobe";
 
         public void OnLoad(UpdateSystem updateSystem)
         {
-            //log.Info(nameof(OnLoad));
-            
-            //if (GameManager.instance.modManager.TryGetExecutableAsset(this, out var asset))
-            //log.Info($"Current mod asset at {asset.path}");
+            GameManager.instance.modManager.TryGetExecutableAsset(this, out var asset);
 
+            UIManager.defaultUISystem.AddHostLocation(uiHostName, Path.Combine(Path.GetDirectoryName(asset.path), "thumbs"), false);
         }
 
         public void OnDispose()
         {
-            //log.Info(nameof(OnDispose));
+            UIManager.defaultUISystem.RemoveHostLocation(uiHostName);
         }
     }
 }

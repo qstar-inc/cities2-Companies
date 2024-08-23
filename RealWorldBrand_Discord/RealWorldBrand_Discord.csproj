@@ -5,12 +5,10 @@
 		<TargetFramework>net472</TargetFramework>
 		<Configurations>Debug;Release</Configurations>
 
-		<CustomManagedPath></CustomManagedPath>
-		
 		<!--The file where mod information which is required for publishing mod on PDX mods are stored-->
 		<PublishConfigurationPath>Properties\PublishConfiguration.xml</PublishConfigurationPath>
 	</PropertyGroup>
-	
+
 	<!--Imports must be after PropertyGroup block-->
 	<Import Project="$([System.Environment]::GetEnvironmentVariable('CSII_TOOLPATH', 'EnvironmentVariableTarget.User'))\Mod.props" />
 	<Import Project="$([System.Environment]::GetEnvironmentVariable('CSII_TOOLPATH', 'EnvironmentVariableTarget.User'))\Mod.targets" />
@@ -26,6 +24,9 @@
 			<Private>false</Private>
 		</Reference>
 		<Reference Include="Colossal.IO.AssetDatabase">
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="Colossal.UI">
 			<Private>false</Private>
 		</Reference>
 		<Reference Include="UnityEngine.CoreModule">
@@ -69,16 +70,11 @@
 		<Copy SourceFiles="@(AdditionalFilesToDeploy)" DestinationFiles="@(AdditionalFilesToDeploy->'$(DeployDir)\%(RecursiveDir)%(Filename)%(Extension)')" />
 	</Target>
 
-
 	<Target Name="Cleanup" AfterTargets="AfterBuild">
 		<ItemGroup>
 			<CleanTargets Include="$(DeployDir)/*.pdb" />
 		</ItemGroup>
 		<Delete Files="@(CleanTargets)" />
 	</Target>
-
-	<ItemGroup>
-		<Folder Include="Resources\Assets\" />
-	</ItemGroup>
 
 </Project>

@@ -17,13 +17,12 @@ This mod adds "Paradox Interactive" as an Software/Media and Recreational Compan
 Additionally includes 42 decals for 59 brand graphics.
 
 # DISCLAIMER
-
+* Safe to remove. This mod will not break your save if removed. However the assets will no longer work.
 * This mod may require ***Asset Packs Manager*** which is highly experimental. This mod shouldn't break the save game. But subscribing to assets that require this without the dependency will pop up errors. Worst case you'll get error popups on game load and/or grey boxes in save. But either way, YOU ARE RESPONSIBLE for any damage. Contact me on Discord and I'll try to help you recover anyway.
 * Including a brand/company in these mods does not imply endorsement nor disapproval of the real-world counterpart's actions or behaviour.
 * Includes copyrighted/trademarked content. All trademarks are the property of their respective owners in the US and other countries. Nominative Fair Use applies.
 
 # CREDIT
-
 * The custom decals in this package were built using the [Brand Decal Template](https://github.com/qstar-inc/Tidbits/tree/main/cities2/BrandDecalTemplate).
 Want to contribute to your favourite brand? Join [Nyoko](https://mods.paradoxplaza.com/authors/Nyyoko)'s SkyLinx server.
 	</LongDescription>
@@ -40,18 +39,19 @@ Want to contribute to your favourite brand? Join [Nyoko](https://mods.paradoxpla
 	<!--Link to the forum post where the mod can be discussed-->
 	<ForumLink Value="" />
 	<!--Version of the mod-->
-	<ModVersion Value="3.0" />
+	<ModVersion Value="3.1.0" />
 	<!--Recommended version of the base game to use the mod-->
-	<GameVersion Value="1.1.*" />
+	<GameVersion Value="*" />
 	<!--Dependency for the mod, can be set multiple times-->
 	<Dependency Id="75426" /> <!-- I18n EveryWhere -->
-	<Dependency Id="78903" /> <!-- Asset Packs Manager -->
+	<!--Dependency Id="78903" /--> <!-- Asset Packs Manager -->
 	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
-	<ChangeLog Value="3.0" />
+	<ChangeLog Value="3.1.0" />
 	<ChangeLog>
-* Now uses vanilla/APM's asset loading.
+* Replaced CIDs to prevent conflict with other assets or local (copy) assets.
+* Fixed thumbnails not appearing.
 	</ChangeLog>
 	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon-->
-	<ExternalLink Type="github" Url="https://github.com/qstar-inc/" />
+	<ExternalLink Type="github" Url="https://github.com/qstar-inc/cities2-Companies" />
 	<ExternalLink Type="discord" Url="https://discord.com/channels/1024242828114673724/1240918216461520918/" />
 </Publish>

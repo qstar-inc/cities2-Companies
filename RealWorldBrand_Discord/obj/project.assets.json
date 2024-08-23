@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\_Everything Else\\Codes\\qstar-inc\\ModsPublished\\cities2-Companies\\RealWorldBrand_Discord\\RealWorldBrand_Discord.csproj",
+      "projectUniqueName": "D:\\_Everything Else\\Codes\\qstar-inc\\ModsPublished_Prefab\\cities2-Companies\\RealWorldBrand_Discord\\RealWorldBrand_Discord.csproj",
       "projectName": "RealWorldBrand_Discord",
-      "projectPath": "D:\\_Everything Else\\Codes\\qstar-inc\\ModsPublished\\cities2-Companies\\RealWorldBrand_Discord\\RealWorldBrand_Discord.csproj",
+      "projectPath": "D:\\_Everything Else\\Codes\\qstar-inc\\ModsPublished_Prefab\\cities2-Companies\\RealWorldBrand_Discord\\RealWorldBrand_Discord.csproj",
       "packagesPath": "C:\\Users\\Qoushik\\.nuget\\packages\\",
-      "outputPath": "D:\\_Everything Else\\Codes\\qstar-inc\\ModsPublished\\cities2-Companies\\RealWorldBrand_Discord\\obj\\",
+      "outputPath": "D:\\_Everything Else\\Codes\\qstar-inc\\ModsPublished_Prefab\\cities2-Companies\\RealWorldBrand_Discord\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Qoushik\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -48,7 +48,7 @@
     "frameworks": {
       "net472": {
         "targetAlias": "net472",
-        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

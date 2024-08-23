@@ -8,22 +8,21 @@ namespace RealWorldBrand_ParadoxInteractive
 {
     public class Mod : IMod
     {
-        //public static ILog log = LogManager.GetLogger($"{nameof(RealWorldBrand_ParadoxInteractive)}.{nameof(Mod)}").SetShowsErrorsInUI(false);
-        public static string uiHostName = "starq-rwb-ParadoxInteractive";
+        public static string Name = "Real World Brand: Paradox Interactive";
+        public static string Version = "3.1.0";
+        public static string Author = "StarQ";
+
+        public static string uiHostName = "starq-rwb-paradox";
 
         public void OnLoad(UpdateSystem updateSystem)
         {
-            //log.Info(nameof(OnLoad));
+            GameManager.instance.modManager.TryGetExecutableAsset(this, out var asset);
 
-            if (GameManager.instance.modManager.TryGetExecutableAsset(this, out var asset))
-                    //log.Info($"Current mod asset at {asset.path}");
-                    UIManager.defaultUISystem.AddHostLocation(uiHostName, Path.Combine(Path.GetDirectoryName(asset.path), "Thumbs"), false);
-
+            UIManager.defaultUISystem.AddHostLocation(uiHostName, Path.Combine(Path.GetDirectoryName(asset.path), "thumbs"), false);
         }
-
+        
         public void OnDispose()
         {
-            //log.Info(nameof(OnDispose));
             UIManager.defaultUISystem.RemoveHostLocation(uiHostName);
         }
     }

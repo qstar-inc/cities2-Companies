@@ -6,24 +6,8 @@
     "components": {
         "$id": 1,
         "$type": "1|System.Collections.Generic.List`1[[Game.Prefabs.ComponentBase, Game]], mscorlib",
-        "$rlength": 3,
+        "$rlength": 2,
         "$rcontent": [
-            {
-                "$id": 2,
-                "$type": "2|Game.Prefabs.SpawnableObject, Game",
-                "name": "SpawnableObject",
-                "active": true,
-                "m_Placeholders": {
-                    "$id": 3,
-                    "$type": "3|Game.Prefabs.ObjectPrefab[], Game",
-                    "$rlength": 1,
-                    "$rcontent": [
-                        $fstrref:"CID:14b6e5f0f933390d4fa4f0c5759afab6"
-                    ]
-                },
-                "m_Probability": 100,
-                "m_RandomizationGroup": null
-            },
             {
                 "$id": 4,
                 "$type": "4|Game.Prefabs.UIObject, Game",
@@ -31,7 +15,7 @@
                 "active": true,
                 "m_Group": null,
                 "m_Priority": 1980100,
-                "m_Icon": "coui://starq-companies-paradox/ParadoxLogoWideBlackBG.png",
+                "m_Icon": "coui://starq-rwb-paradox/ParadoxLogoWideBlackBG.png",
                 "m_LargeIcon": null,
                 "m_IsDebugObject": false
             },

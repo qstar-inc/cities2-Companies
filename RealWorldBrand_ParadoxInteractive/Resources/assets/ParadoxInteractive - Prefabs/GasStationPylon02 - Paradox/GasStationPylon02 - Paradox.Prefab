@@ -33,7 +33,7 @@
             {
                 "$id": 102,
                 "$type": 3,
-                "m_Mesh": $fstrref:"CID:1e366123c69fa86be76cd7c8aebf3e5b",
+                "m_Mesh": $fstrref:"CID:c14f888e7f420c76cda168a97af72ba9",
                 "m_Position": {
                     "$type": 4,
                     "x": 0,
@@ -55,7 +55,7 @@
             {
                 "$id": 104,
                 "$type": 3,
-                "m_Mesh": $fstrref:"CID:65ef337413693a585b4c141685c24a00",
+                "m_Mesh": $fstrref:"CID:1a7947a5cd2054a99523f15f1fbd9bd5",
                 "m_Position": {
                     "$type": 4,
                     "x": 0,
@@ -77,7 +77,7 @@
             {
                 "$id": 105,
                 "$type": 3,
-                "m_Mesh": $fstrref:"CID:1e366123c69fa86be76cd7c8aebf3e5b",
+                "m_Mesh": $fstrref:"CID:c14f888e7f420c76cda168a97af72ba9",
                 "m_Position": {
                     "$type": 4,
                     "x": 0,
@@ -99,7 +99,7 @@
             {
                 "$id": 106,
                 "$type": 3,
-                "m_Mesh": $fstrref:"CID:65ef337413693a585b4c141685c24a00",
+                "m_Mesh": $fstrref:"CID:1a7947a5cd2054a99523f15f1fbd9bd5",
                 "m_Position": {
                     "$type": 4,
                     "x": 0,
@@ -156,7 +156,7 @@
                 "$type": "14|Game.Prefabs.BrandObject, Game",
                 "name": "BrandObject",
                 "active": true,
-                "m_Brand": $fstrref:"CID:c822687fc16cb21998b4d169c272b1f7"
+                "m_Brand": $fstrref:"CID:a4d405f948e178a1576bae525bdf12fa"
             },
             {
                 "$id": 15,
@@ -165,7 +165,7 @@
                 "active": true,
                 "m_Group": null,
                 "m_Priority": 1,
-                "m_Icon": coui://starq-rwb-ParadoxInteractive/MilleniaPoster.png,
+                "m_Icon": "coui://starq-rwb-paradox/MilleniaPoster.png",
                 "m_LargeIcon": "",
                 "m_IsDebugObject": false
             },
